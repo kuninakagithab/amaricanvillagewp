@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+*{
+  font-family: "游ゴシック体", YuGothic;
+}
+
+.container{
+  width: 1152px;
+  margin: 0 auto;
+}
+
+header{
+  height: 180px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav{
+  display: flex;
+  line-height: 180px;
+  list-style: none;
+  margin-right: 10px;
+}
+
+li{
+  margin-right: 40px;
+}
+
+a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+main{
+  height: 500px;
+  position: relative;
+}
+
+.logo{
+ position: absolute;
+ top: -121px;
+ left: -121px;
+ z-index: 1;
+}
+
+.toppic{
+  width: 1152px;
+  position: absolute;
+}
+
+.visualt{
+  position: absolute;
+  top: 292px;
+  left: 718px;
+}
+
+.mtext{
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-family: "游ゴシック";
+  font-weight: 100;
+}
+
+.mtext br{
+  display: none;
+}
+
+.textbox{
+  height: 50px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 100px;
+}
+
+.mtext{
+  position: absolute;
+  top: 0;
+  left: -100px;
+}
+h1{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+article{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+aside{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 10%;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2% 0 0 2%;
+  line-height: 40px;
+}
+.description p:nth-child(2n){
+  margin-bottom: 30%;
+}
+
+.margin-short{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2% 0 18% 2%;
+  line-height: 40px;
+}
+
+.readmore{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer>p{
+  font-size: 20px;
+  color: white;
+}
+
+@media screen and (min-width:768px) and (max-width:1157px) {
+}
+@media screen and (max-width:767px) {
+  header{
+    display: none;
+  }
+
+  .container{
+    width: 100%;
+  }
+
+  main{
+    height: 20%;
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo{
+    position: static;
+    margin: 20px 0;
+   }
+   
+   .toppic{
+     width: 100%;
+     position: static;
+   }
+   
+   .visualt{
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    top: 300px;
+    left: 0;
+   }
+
+   .textbox{
+     position: static;
+     text-align: center;
+   }
+
+   .mtext{
+    position: static;
+   }
+
+   .mtext br{
+     display: block;
+   }
+
+   article{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+   }
+
+   aside{
+     width: 100%;
+     width: 94%;
+     margin: 0 3%;
+   }
+
+   .pic_width{
+     width: 94%;
+     margin: 0 3%;
+   }
+
+   .description{
+     width: 90%;
+     margin: 0 5%;
+     margin-top: 2%;
+     font-size: 30px;
+   }
+
+   .readmore{
+     width: 90%;
+     margin: 0 5%;
+     font-size: 30px;
+    margin-bottom: 10%;
+   }
+
+   h1{
+    font-size: 70px;
+  }
+
+  .margin-short{
+    font-size: 30px;
+  }
+}

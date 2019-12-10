@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="<?=  get_template_directory_uri(); ?>/css/reset.css">
-  <link rel="stylesheet" href="<?=  get_template_directory_uri(); ?>/css/toppage.css"> 
+  <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/reset.css">
+  <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/toppage.css"> 
   <title>American Village</title>
 </head>
 
@@ -53,7 +53,7 @@
           <p>おしゃれカフェがありますよ</p>
         </div>
         <div class="readmore">
-          <p>READ MORE</p>
+          <a href="#" class="target">READ MORE</a>
           <p class="extend"></p>
         </div>
       </aside>
@@ -65,7 +65,7 @@
           <p>あのネオンはいつ交換するのか！？観覧車の謎に迫る！</p>
         </div>
         <div class="readmore">
-          <p>READ MORE</p>
+          <a href="#" class="target">READ MORE</a>
           <p class="extend"></p>
         </div>
       </aside>
@@ -77,7 +77,7 @@
           <p>ラソナの車内はこんなのよ</p>
         </div>
         <div class="readmore">
-          <p>READ MORE</p>
+          <a href="#" class="target">READ MORE</a>
           <p class="extend"></p>
         </div>
       </aside>
@@ -89,7 +89,7 @@
           <p>お隣のアラははハワイ？</p>
         </div>
         <div class="readmore">
-          <p>READ MORE</p>
+          <a href="#" class="target">READ MORE</a>
           <p class="extend"></p>
         </div>
       </aside>
@@ -101,7 +101,7 @@
           <p>なぜテント？ラソナの人に聞いてみた</p>
         </div>
         <div class="readmore">
-          <p>READ MORE</p>
+          <a href="#" class="target">READ MORE</a>
           <p class="extend"></p>
         </div>
       </aside>
@@ -113,7 +113,7 @@
           <p>ベイエリアおしゃれすぎる問題</p>
         </div>
         <div class="readmore">
-          <p>READ MORE</p>
+          <a href="#" class="target">READ MORE</a>
           <p class="extend"></p>
         </div>
       </aside>

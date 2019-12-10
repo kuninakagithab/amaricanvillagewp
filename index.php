@@ -65,8 +65,8 @@
           <p>あのネオンはいつ交換するのか！？観覧車の謎に迫る！</p>
         </div>
         <div class="readmore">
-          <p class="extend">READ MORE</p>
-          <p></p>
+          <p>READ MORE</p>
+          <p class="extend"></p>
         </div>
       </aside>
       <!-- aside3 -->

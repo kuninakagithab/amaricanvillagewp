@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<?php wp_head(); ?>
   <header>
     <nav>
       <li><a href="#">Menu01</a></li>
@@ -121,6 +122,7 @@
   <footer>
     <p>Copyright &copy; Shinohara.ALL RIGHTS RESERVED.</p>
   </footer>
+  <?php wp_footer(); ?>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

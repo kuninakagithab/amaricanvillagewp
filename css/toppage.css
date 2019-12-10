@@ -104,8 +104,20 @@ aside{
 }
 
 aside:hover{
-  box-shadow: 5px 5px rgb(0, 0, 0);
+  animation: shadow 2s forwards;
 }
+@keyframes shadow {
+  0% {
+    box-shadow: 0px 0px rgb(255, 255, 255);
+  }
+  20% {
+    box-shadow: 3px 3px 3px 3px rgb(170, 170, 170);
+  }
+  100% {
+    box-shadow: 2px 2px 3px 3px rgb(124, 124, 124);
+  }
+}
+
 
 .description{
   display: flex;
@@ -130,6 +142,7 @@ aside:hover{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding: 0 5px;
 }
 
 footer{
@@ -152,6 +165,8 @@ footer>p{
 @media screen and (min-width:768px) and (max-width:1157px) {
   
 }
+
+
 @media screen and (max-width:767px) {
   header{
     display: none;

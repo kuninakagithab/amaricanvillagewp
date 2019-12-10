@@ -54,7 +54,7 @@
         </div>
         <div class="readmore">
           <p>READ MORE</p>
-          <p>____</p>
+          <p class="extend"></p>
         </div>
       </aside>
       <!-- aside2 -->
@@ -65,8 +65,8 @@
           <p>あのネオンはいつ交換するのか！？観覧車の謎に迫る！</p>
         </div>
         <div class="readmore">
-          <p>READ MORE</p>
-          <p>____</p>
+          <p class="extend">READ MORE</p>
+          <p></p>
         </div>
       </aside>
       <!-- aside3 -->
@@ -78,7 +78,7 @@
         </div>
         <div class="readmore">
           <p>READ MORE</p>
-          <p>____</p>
+          <p class="extend"></p>
         </div>
       </aside>
       <!-- aside4 -->
@@ -90,7 +90,7 @@
         </div>
         <div class="readmore">
           <p>READ MORE</p>
-          <p>____</p>
+          <p class="extend"></p>
         </div>
       </aside>
       <!-- aside5 -->
@@ -102,7 +102,7 @@
         </div>
         <div class="readmore">
           <p>READ MORE</p>
-          <p>____</p>
+          <p class="extend"></p>
         </div>
       </aside>
       <!-- aside6 -->
@@ -114,7 +114,7 @@
         </div>
         <div class="readmore">
           <p>READ MORE</p>
-          <p>____</p>
+          <p class="extend"></p>
         </div>
       </aside>
     </article>
@@ -126,7 +126,7 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/app.js"></script>
+  <script src="<?=  get_template_directory_uri(); ?>/js/app.js"></script>
 </body>
 
 </html>

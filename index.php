@@ -23,17 +23,17 @@
 
   <div class="container">
     <main>
-      <picture>
+      <picture class="sample1">
         <source class="logo" media="(min-width:768px)" srcset="<?=  get_template_directory_uri(); ?>/img/logo.png">
         <source class="logo" media="(max-width:767px)" srcset="<?=  get_template_directory_uri(); ?>/img/logo.png">
         <img class="logo" src="<?=  get_template_directory_uri(); ?>/img/logo.png" alt="logo">
       </picture>
-      <picture>
+      <picture class="sample2">
         <source class="toppic" media="(min-width:768px)" srcset="<?=  get_template_directory_uri(); ?>/img/visual_1_pc.png">
         <source class="toppic" media="(max-width:767px)" srcset="<?=  get_template_directory_uri(); ?>/img/visual_1_sp.png">
         <img class="toppic" src="<?=  get_template_directory_uri(); ?>/img/visual_1_pc.png" alt="toppic">
       </picture>
-      <picture>
+      <picture class="sample3">
         <source class="visualt" media="(min-width:768px)" srcset="<?=  get_template_directory_uri(); ?>/img/visual_text_pc.png">
         <source class="visualt" media="(max-width:767px)" srcset="<?=  get_template_directory_uri(); ?>/img/visual_text_sp.png">
         <img class="visualt" src="<?=  get_template_directory_uri(); ?>/visual_text_pc.png" alt="visual">
@@ -86,7 +86,7 @@
         <img class="pic_width" src="<?=  get_template_directory_uri(); ?>/img/post_img_4.png" alt="Araha beach">
         <div class="description">
           <p>2018/5/27</p>
-          <p>お隣のアラははハワイ？</p>
+          <p>お隣のアラハはハワイ？</p>
         </div>
         <div class="readmore">
           <a href="#" class="target">READ MORE</a>

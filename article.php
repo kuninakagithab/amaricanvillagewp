@@ -4,7 +4,7 @@
     <?php while (have_posts()) : the_post() ?>
 
     <aside>
-        <?php the_post_thumbnail('large'); ?>
+    <?php the_post_thumbnail('large'); ?>
         <div class="description">
           <p><?php the_date(); ?></p>
           <p><?php the_title() ?></p>

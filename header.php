@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/reset.css">
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/toppage.css">
   <title>American Village</title>
+  <? wp_deregister_script('jquery'); ?>
 </head>
 
 <body>

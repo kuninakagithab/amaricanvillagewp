@@ -4,7 +4,6 @@
 
 
   <h1>Latest Articles</h1>
-  <?php get_template_part('loop','main'); ?>
   <?php get_template_part('article'); ?>
     
   

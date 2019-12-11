@@ -50,7 +50,7 @@ main {
 
 .sample3 {
     position: absolute;
-    top: 292px;
+    top: 269px;
     left: 718px;
 }
 
@@ -267,10 +267,10 @@ footer>p {
         width: 100%;
         width: 94%;
         margin: 0 3%;
+        margin-bottom: 10px;
     }
     .pic_width {
-        width: 94%;
-        margin: 0 3%;
+        width: 100%;
     }
     .description {
         width: 90%;

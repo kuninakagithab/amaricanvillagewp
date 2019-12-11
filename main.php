@@ -5,11 +5,7 @@
       <source class="logo" media="(max-width:767px)" srcset="<?= get_template_directory_uri(); ?>/img/logo.png">
       <img class="logo" src="<?= get_template_directory_uri(); ?>/img/logo.png" alt="logo">
     </picture>
-    <picture class="sample2">
-      <source class="toppic" media="(min-width:768px)" srcset="<?= get_template_directory_uri(); ?>/img/visual_1_pc.png">
-      <source class="toppic" media="(max-width:767px)" srcset="<?= get_template_directory_uri(); ?>/img/visual_1_sp.png">
-      <img class="toppic" src="<?= get_template_directory_uri(); ?>/img/visual_1_pc.png" alt="toppic">
-    </picture>
+    <?php echo do_shortcode('[smartslider3 slider=4]')?>
     <picture class="sample3">
       <source class="visualt" media="(min-width:768px)" srcset="<?= get_template_directory_uri(); ?>/img/visual_text_pc.png">
       <source class="visualt" media="(max-width:767px)" srcset="<?= get_template_directory_uri(); ?>/img/visual_text_sp.png">

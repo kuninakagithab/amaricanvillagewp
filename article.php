@@ -3,7 +3,7 @@
     <?php while (have_posts()) : the_post() ?>
 
       <aside>
-        <?php the_post_thumbnail() ?>
+        <?php the_post_thumbnail(); ?>
         <div class="description">
           <p><?php the_date(); ?></p>
           <p class="textheight"><?php the_title(); ?></p>

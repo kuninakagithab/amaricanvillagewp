@@ -1,5 +1,5 @@
 <footer>
-    <p>Copyright &copy; Shinohara.ALL RIGHTS RESERVED.</p>
+    <p>Copyright &copy;a Shinohara.ALL RIGHTS RESERVED.</p>
   </footer>
   <?php wp_footer(); ?>
 

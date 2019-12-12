@@ -6,7 +6,7 @@
         <?php the_post_thumbnail() ?>
         <div class="description">
           <p><?php the_date(); ?></p>
-          <p><?php the_title(); ?></p>
+          <p class="textheight"><?php the_title(); ?></p>
         </div>
         <div class="readmore">
           <a href="<?php the_permalink(); ?>" class="target">READ MORE</a>

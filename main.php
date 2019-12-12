@@ -5,6 +5,9 @@
       <source class="logo" media="(max-width:767px)" srcset="<?= get_template_directory_uri(); ?>/img/logo.png">
       <img class="logo" src="<?= get_template_directory_uri(); ?>/img/logo.png" alt="logo">
     </picture>
+    <picture class="none">
+      <source class="" media="(max-width:767px)" srcset="<?= get_template_directory_uri(); ?>/img/visual_1_sp.png">
+    </picture>
     <?php echo do_shortcode('[smartslider3 slider=4]')?>
     <picture class="sample3">
       <source class="visualt" media="(min-width:768px)" srcset="<?= get_template_directory_uri(); ?>/img/visual_text_pc.png">

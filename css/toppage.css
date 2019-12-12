@@ -1,308 +1,347 @@
 @charset "UTF-8";
-
-*{
-  font-family: "游ゴシック体", YuGothic;
+* {
+    font-family: "游ゴシック体", YuGothic;
 }
 
-.container{
-  width: 80%;
-  margin: 0 auto;
+
+/*メニュー部分*/
+
+#ham-menu {
+    background-color: #fff;
+    /*メニュー背景色*/
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px 40px;
+    /*メニュー内部上下左右余白*/
+    position: fixed;
+    right: -300px;
+    /*メニュー横幅①と合わせる*/
+    top: 0;
+    transition: transform 0.3s linear 0s;
+    /*0.3s は変化するのにかかる時間*/
+    width: 300px;
+    /*メニュー横幅①*/
+    z-index: 1000;
+    display: none;
 }
 
-header{
-  height: 180px;
-  display: flex;
-  justify-content: flex-end;
+
+/*メニューアイコン部分は疑似要素で*/
+
+#ham-menu::before {
+    background-color: #fff;
+    /*ボタン部分背景色*/
+    border-radius: 0 0 0 10px;
+    /*左下角丸*/
+    color: #333;
+    /*アイコン（フォント）色*/
+    content: "≡";
+    /*メニューアイコン*/
+    display: block;
+    font-size: 50px;
+    /*アイコン（フォント）サイズ*/
+    height: 50px;
+    line-height: 50px;
+    /*縦位置中央化*/
+    position: absolute;
+    right: 100%;
+    text-align: center;
+    top: 0;
+    width: 50px;
 }
 
-nav{
-  display: flex;
-  line-height: 180px;
-  list-style: none;
-  margin-right: 10px;
+
+/*透過背景部分*/
+
+#menu-background {
+    background-color: #333;
+    /*黒背景部分背景色*/
+    display: block;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 0.3s linear 0s;
+    /*0.3s は変化するのにかかる時間*/
+    width: 100%;
+    z-index: -1;
 }
 
-li{
-  margin-right: 40px;
+
+/*hover 時の処理*/
+
+#ham-menu:hover {
+    transform: translate(-300px);
+    /*メニュー横幅①と合わせる*/
 }
 
-a{
-  text-decoration: none;
-  font-size: 20px;
-  color: black;
+#ham-menu:hover+#menu-background {
+    opacity: 0.5;
+    /*黒背景部分透過度*/
+    z-index: 999;
 }
 
-main{
-  height: 500px;
-  position: relative;
+
+/* slineno スライダーが最初表示されている */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.sample1{
- position: absolute;
- top: -121px;
- left: -121px;
- z-index: 1;
+header {
+    height: 180px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.toppic{
-  width: 100%;
-  position: absolute;
+nav {
+    display: flex;
+    line-height: 180px;
+    list-style: none;
+    margin-right: 10px;
 }
 
-.sample3{
-  position: absolute;
-  top: 292px;
-  left: 718px;
+li {
+    margin-right: 40px;
 }
 
-.mtext{
-  font-size: 25px;
-  margin-top: 5px;
-  margin-bottom: 50px;
-  font-family: "游ゴシック";
-  font-weight: 100;
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
 }
 
-.mtext br{
-  display: none;
+main {
+    height: 500px;
+    position: relative;
 }
 
-.textbox{
-  height: 50px;
-  position: relative;
-  top: 0;
-  left: 0;
-  margin-bottom: 100px;
+.sample1 {
+    position: absolute;
+    top: -121px;
+    left: -121px;
+    z-index: 1;
 }
 
-.mtext{
-  position: absolute;
-  top: 0;
-  left: -100px;
+.toppic {
+    width: 1157px;
+    position: absolute;
 }
 
-h1{
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 3%;
+.sample3 {
+    position: absolute;
+    top: 269px;
+    left: 718px;
 }
 
-article{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 1157px;
+.mtext {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-family: "游ゴシック";
+    font-weight: 100;
 }
 
-aside{
-  display: flex;
-  flex-direction: column;
-  width: 345px;
-  margin-bottom: 10%;
+.mtext br {
+    display: none;
 }
 
-aside:hover{
-  animation: shadow 2s forwards;
+.textbox {
+    height: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 100px;
+}
+
+.mtext {
+    position: absolute;
+    top: 0;
+    left: -100px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+aside:hover {
+    animation: shadow 2s forwards;
 }
 
 @keyframes shadow {
-  0% {
-    box-shadow: 0px rgb(255, 255, 255);
-  }
-  20% {
-    box-shadow: 3px 3px 3px 3px rgb(170, 170, 170);
-  }
-  100% {
-    box-shadow: 2px 2px 3px 3px rgb(124, 124, 124);
-  }
+    0% {
+        box-shadow: 0px rgb(255, 255, 255);
+    }
+    20% {
+        box-shadow: 3px 3px 3px 3px rgb(170, 170, 170);
+    }
+    100% {
+        box-shadow: 2px 2px 3px 3px rgb(124, 124, 124);
+    }
 }
 
-.description{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 2% 0 0 2%;
-  line-height: 40px;
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2% 0 0 2%;
+    line-height: 40px;
 }
 
-.description p:nth-child(2n){
-  margin-bottom: 30%;
+.description p:nth-child(2n) {
+    margin-bottom: 30%;
 }
 
-.margin-short{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 2% 0 18% 2%;
-  line-height: 40px;
+.margin-short {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2% 0 18% 2%;
+    line-height: 40px;
 }
 
-.readmore{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 0 5px;
+.readmore {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 5px;
 }
 
-.extend{
-  margin-bottom: 10px;
-  width: 20px;
-  border-bottom: 2px solid black;
-  transition: width .3s ease-out;
-  cursor: pointer;
+.extend {
+    margin-bottom: 10px;
+    width: 20px;
+    border-bottom: 2px solid black;
+    transition: width .3s ease-out;
+    cursor: pointer;
 }
 
-.target:hover + .extend{
-  width: 120px;
+.target:hover+.extend {
+    width: 120px;
 }
 
-footer{
-  width: 100%;
-  height: 100px;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-footer>p{
-  font-size: 20px;
-  color: white;
-}
-
-/* @media screen and (min-width:768px) and (max-width:1157px) {
-
-  .container{
+footer {
     width: 100%;
-  }
-
-  main{
-    height: 20%;
-    width: 100%;
-    position: static;
+    height: 100px;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+    justify-content: center;
+}
 
-  .logo{
-    position: static;
-    margin: 20px 0;
-  }
-  
-  .toppic{
-    width: 100%;
-    position: static;
-  }
-  
-  .visualt{
-   width: 50%;
-   height: 30%;
-   position: absolute;
-   top: 300px;
-   left: 0;
-  }
+footer>p {
+    font-size: 20px;
+    color: white;
+}
 
-  .textbox{
-     position: static;
-     text-align: center;
-   }
-
-  .mtext{
-    position: static;
-  }
-
-  .mtext br{
-    display: block;
-  }
-} */
+@media screen and (min-width:768px) and (max-width:1157px) {
+    .mtext {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}
 
 @media screen and (max-width:767px) {
-  header{
-    display: none;
-  }
-
-  .container{
-    width: 100%;
-  }
-
-  main{
-    height: 20%;
-    width: 100%;
-    position: static;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo{
-    position: static;
-    margin: 20px 0;
-   }
-   
-   .toppic{
-     width: 100%;
-     position: static;
-   }
-   
-   .visualt{
-    width: 50%;
-    height: 30%;
-    position: absolute;
-    top: 300px;
-    left: 0;
-   }
-
-   .textbox{
-     position: static;
-     text-align: center;
-   }
-
-   .mtext{
-    position: static;
-   }
-
-   .mtext br{
-     display: block;
-   }
-
-   article{
-     width: 100%;
-     display: flex;
-     flex-direction: column;
-   }
-
-   aside{
-     width: 100%;
-     width: 94%;
-     margin: 0 3%;
-   }
-
-   .pic_width{
-     width: 94%;
-     margin: 0 3%;
-   }
-
-   .description{
-     width: 90%;
-     margin: 0 5%;
-     margin-top: 2%;
-     font-size: 30px;
-   }
-
-   .readmore{
-    width: 90%;
-    margin: 0 5%;
-    font-size: 30px;
-    margin-bottom: 10%;
-   }
-
-   h1{
-    font-size: 70px;
-  }
-
-  .margin-short{
-    font-size: 30px;
-  }
+    #ham-menu {
+        display: block;
+    }
+    .slinone {
+        display: none;
+    }
+    .rnone {
+        display: block;
+    }
+    header {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+    main {
+        margin-top: 300px;
+        height: 20%;
+        width: 100%;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sample1 {
+        width: 100%;
+    }
+    .logo {
+        position: relative;
+        left: 50%;
+        top: 150px;
+    }
+    .toppic {
+        position: static;
+    }
+    .visualt {
+        width: 300px;
+        height: 180px;
+        position: absolute;
+        top: 77px;
+        left: -720px;
+    }
+    .textbox {
+        position: static;
+        text-align: center;
+    }
+    .mtext {
+        position: static;
+    }
+    .mtext br {
+        display: block;
+    }
+    article {
+        flex-direction: column;
+    }
+    aside {
+        margin: 30px auto;
+    }
+    .pic_width {
+        width: 320px;
+        height: 206px;
+    }
+    .description {
+        width: 90%;
+        margin: 0 5%;
+        margin-top: 2%;
+        font-size: 30px;
+    }
+    .readmore {
+        width: 90%;
+        margin: 0 5%;
+        font-size: 30px;
+        margin-bottom: 10%;
+    }
+    h1 {
+        font-size: 70px;
+    }
+    .margin-short {
+        font-size: 30px;
+    }
 }

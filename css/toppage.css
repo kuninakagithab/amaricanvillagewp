@@ -3,7 +3,6 @@
     font-family: "游ゴシック体", YuGothic;
 }
 
-
 /*メニュー部分*/
 
 #ham-menu {
@@ -294,7 +293,7 @@ footer>p {
     .logo {
         position: relative;
         left: 50%;
-        top: 200px;
+        top: 150px;
     }
     .toppic {
         position: static;
@@ -344,4 +343,12 @@ footer>p {
     .margin-short {
         font-size: 30px;
     }
+}
+
+
+/* 6件以上 */
+
+.clickmore{
+    display: flex;
+    justify-content: flex-end;
 }
